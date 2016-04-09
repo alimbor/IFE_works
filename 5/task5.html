@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>零基础HTML及CSS编码贰</title>
+  <style type="text/css">
+  
+  *{margin:0;padding:0;}
+
+body{
+	font-size:small;
+	font-family: "黑体";
+	background-color: #e0e0e0;
+}
+#header{
+	background-color:#272727;
+	height: 50px;
+}
+#header img{
+	position:absolute;
+	top:7px;
+    left: 10px;
+}
+.nav,.nav li,.nav a{
+	float: right;
+	line-height: 50px;
+	list-style:none;
+	margin-right:15px;
+}
+.nav a{
+	color: white;
+	text-decoration: none;
+}
+.nav a:hover{
+	color:orange;
+}
+#main{
+	position: relative;
+}
+.side{
+	border:1px solid #D6D6AD;
+	background-color: white;
+    float: right;
+    width: 310px;
+    height:430px;
+    position:absolute;
+    right: 20px;
+    box-shadow:2.5px 2.5px  #999 ; 
+    padding: 25px 20px;
+}
+.fool{
+	float: right;
+	text-align: center;
+	padding: 5px;
+}
+.cnm{
+	margin: 5px;
+}
+#in{
+	font-family: "黑体";
+	width: 300px;
+	height: 33px;
+	line-height: 33px;
+	border-radius: 10px;
+	color: white;
+	background-color:#0072e3;
+	margin-top: 10px;
+
+}
+.mid{
+	margin:20px 390px 0 20px;
+}
+.one,.two,.thr,.fou{
+	margin-bottom: 20px;
+	background-color: white;
+	border-top:1px solid #D6D6AD;
+	border-left:1px solid #D6D6AD;
+	box-shadow:2.5px 2.5px  #999 ; 
+	padding: 30px 20px;
+}
+h1{
+	font-size:1.5em;
+	font-weight:bold;
+	margin-bottom: 12px;
+}
+h2{
+	font-size: 1em;
+	margin-bottom: 12px;
+	color:gray;
+}
+.qq{
+	color:gray;
+	font-size:0.8em;
+	display:block;
+	margin-bottom: 12px;
+}
+p{
+	line-height: 1.5em;
+}
+.thr img{
+	border:2px dashed gray;
+	padding: 10px;
+	margin:10px;
+}
+.taa td,.taa tr{
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+}
+#footer{
+	text-align: center;
+	color: white;
+	line-height: 60px;
+	background-color: #272727;
+	height: 60px;
+}
+
+  </style>
+  </head>
+
+  <body>
+<!--页头-->
+  	<div id="header">
+  	 <img src="2016.jpg"  width="100px">
+  	 <ul class="nav">
+        <li><a href="#">导航链接1</a></li>
+        <li><a href="#">导航链接2</a></li>
+        <li><a href="#">导航链接3</a></li>
+        <li><a href="#">导航链接4</a></li>
+  	 </ul>
+  	</div>
+<!--中部两栏式-->
+  	<div id="main">
+  	<!--侧边栏-->
+        <div class="side">
+          <form class="fool">
+          <h1 style="margin-bottom:10px;text-align:left;">这里是个侧栏，这是标题</h1>
+          输个邮箱：
+          <input class="cnm" type="email" name="mail"></input>
+          <p class="cnm" style="color: gray;font-size: 0.9em;">邮箱地址请安要求格式输入</p>
+          输个密码：
+          <input class="cnm" class="cnm" type="password" name="password"></input><br>
+          再输密码：
+          <input class="cnm" type="password" name="password"></input>
+          <p class="cnm" style="color: gray; font-size: 0.9em;">密码请为6-16位英文数字</p>
+          性别: 
+          男<input class="cnm" type="radio" name="gender" value="0" checked="true"></input> 
+          女<input class="cnm" type="radio" name="gender" value="1"></input>  <br><br>
+          城市：<select class="cnm" name="city">
+          <option value="北京">北京</option>
+          <option value="上海">上海</option>
+          <option value="广州">广州</option>
+          <option value="深圳">深圳</option>
+          <option value="武汉">武汉</option>
+          <option value="成都">成都</option>
+          <option value="杭州">杭州</option>
+          </select><br><br>
+          爱好：
+          <input type="checkbox" name="Bike">自行车</input>
+          <input type="checkbox" name="eat">吃饭</input>
+          <input type="checkbox" name="sleep">睡觉</input><br><br>
+          
+          个人描述：
+          <textarea rows="6" cols="25">这是一个输入框，让你写你就写</textarea><br>
+          <input id="in" type="submit" value="确认提交"></input>
+          </form>
+        </div>
+      <!--4大框-->
+        <div class="mid">
+           <div class="one">
+               <h1>文章一级标题</h1>
+               <h2>文章二级标题</h2>
+               <span class="qq">文章作者 1950年5月20日</span>
+               <p style="text-indent: 2em;">
+               	这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落。
+               	</p>
+               	<p style="text-indent: 2em;">这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落。
+               	</p>
+               	<p style="text-indent: 2em;">这是个段落这是个段落这是个段落这是个段落<a href="http://ife.baidu.com" title="百度前端技术学院">这里有个链接不点一下？</a>字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数.exe
+               </p>
+               <img src="2015.gif" title="信你邪" style="margin:15px 15px;">
+               <p style="text-indent: 2em;">
+               	这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是这是个段落这是个段落这是个段落这是个段落个段落这是个段落这是个段落。</p>
+               	<p style="text-indent: 2em;">这是个段落这是个这是个段落这是个段落段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落。</p>
+               	<p style="text-indent: 2em;">这是个段落这是个段落这是个段落这是个段落<a href="http://ife.baidu.com" title="百度前端技术学院" target="_blank">这里有个新窗口链接不点一下？</a>不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？不点一下？
+               </p>
+           </div>
+           <div class="two">
+               <h1>文章一级标题</h1>
+               <h2>文章二级标题</h2>
+               <span class="qq">文章作者有病 1950年4月1日</span>
+               <p style="text-indent: 2em;">
+               	这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落。</p>
+               	<p style="text-indent: 2em;">这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落这是个段落。</p>
+               	<p style="text-indent: 2em;">这是个段落这是个段落这是个段落这是个段落<a href="http://ife.baidu.com" title="百度前端技术学院">还是那个连接，别点了</a>字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数字数点不点点不点点不点点不点点不点点不点点不点点不点？</p>
+               	<img src="50.jpg" title="ZhuangBi" width="400px" style="margin:15px 15px;">
+                <ul style="text-indent:2em;list-style:none;line-height:2em;">
+                  <li>项目列表1</li>
+                  <li>项目列表2</li>
+                  <li>项目列表3</li>
+                  <li>项目列表4</li>
+                  <li>项目列表5</li>
+                </ul>
+           </div>
+           <div class="thr">
+                <div class="imggg">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                <img src="pic.jpg" title="瞅你">
+                </div>
+           </div>
+           <div class="fou">
+                <h1>文章一级标题</h1>
+               <h2>文章二级标题</h2>
+               <span class="qq">文章作者 1950年3月1日</span>
+               <ol style="text-indent:2em;list-style:none;line-height:2em;margin-bottom: 15px;">
+                 <li>排名1</li>
+                 <li>排名2</li>
+                 <li>排名3</li>
+                 <li>排名4</li>
+                 <li>排名5</li>
+                 <li>排名6</li>
+               </ol>
+               <p>下面是一个表格，说不加border=1那我就不加border=1了</p>
+               <table class="taa">
+               	<tr style="background-color:#272727;color:white;">
+               	   <th>表头</th>
+               	   <th>表头</th>
+               	   <th>表头</th>
+               	</tr>
+               	<tr style="background-color:#F0F0F0">
+               	   <td>表左</td>
+               	   <td>内容中</td>
+               	   <td>内容右</td>
+               	</tr>
+               	<tr>
+               	   <td>表中</td>
+               	   <td>内容中</td>
+               	   <td>内容右</td>
+               	</tr>
+               	<tr style="background-color:#F0F0F0">
+               	   <td>表下</td>
+               	   <td>内容中</td>
+               	   <td>内容右</td>
+               	</tr>
+               	<tr>
+               	   <td>表最下</td>
+               	   <td>内容中</td>
+               	   <td>内容右</td>
+               	</tr>
+               	<tr style="background-color:#F0F0F0">
+               		<td>总计</td>
+               		<td>100000</td>
+               		<td> </td>
+               	</tr>
+               </table>
+           </div>
+        </div>
+ <!--页脚-->     
+  	</div>
+
+    <div id="footer">
+        <p>&copy;版权归此神经病人所有</p><p>图片都是扒的</p>
+        <p>This is only a joke for my production. Hope you don't like it.</p>
+    </div>
+
+  </body>
+  </html>
